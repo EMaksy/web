@@ -24,7 +24,14 @@ const healthSummaryTableConfig = {
       title: 'SAP Instances',
       key: 'sapsystemHealth',
       className: 'text-center',
-      render: (content) => <HealthIcon health={content} centered={true} />,
+      render: (content, item) => {
+        const linkToSapInstance = `/sap_systems/${item.id}`;
+        return (
+          <Link to={linkToSapInstance}>
+            <HealthIcon health={content} centered={true} />
+          </Link>
+        );
+      },
     },
     {
       title: 'Database',
