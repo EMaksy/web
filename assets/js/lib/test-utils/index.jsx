@@ -11,7 +11,8 @@ import clusters from './data/clusters';
 import sapSystems from './data/hosts';
 
 export const withState = (component) => {
-  store.dispatch(setHosts(hosts));
+  store.dispatch(setHosts(sapSystems));
+  //console.log(store.dispatch(setHosts(sapSystems)))
   store.dispatch(setClusters(clusters));
   store.dispatch(setSapSystems(sapSystems));
 
