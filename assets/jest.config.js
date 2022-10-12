@@ -87,6 +87,7 @@ module.exports = {
     '^@lib(.*)$': '<rootDir>/js/lib$1',
     '^@components(.*)$': '<rootDir>/js/components$1',
     '^@state(.*)$': '<rootDir>/js/state$1',
+    '^@hooks(.*)$': '<rootDir>/js/components/Table/Filter.jsx',
     phoenix: '<rootDir>/../deps/phoenix/priv/static/phoenix.cjs.js',
   },
 
