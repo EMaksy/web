@@ -1,8 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
-
+import { Routes, Route,BrowserRouter} from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 import { Provider } from 'react-redux';
 
@@ -28,7 +27,7 @@ import SomethingWentWrong from '@components/SomethingWentWrong';
 import Settings from '@components/Settings';
 import Eula from '@components/Eula';
 
-const App = () => {
+export const App = () => {
   return (
     <Provider store={store}>
       <Toaster position="top-right" />

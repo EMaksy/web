@@ -15,7 +15,7 @@ export const withState = (component) => {
   //console.log(store.dispatch(setHosts(sapSystems)))
   store.dispatch(setClusters(clusters));
   store.dispatch(setSapSystems(sapSystems));
-
+  //console.log(component);
   return [
     <Provider key="root" store={store}>
       {component}

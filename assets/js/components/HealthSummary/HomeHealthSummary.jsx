@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import HealthSummary from '@components/HealthSummary';
 
+
 const healthSummaryTableConfig = {
   usePadding: false,
   columns: [
@@ -26,6 +27,7 @@ const healthSummaryTableConfig = {
       className: 'text-center',
       render: (content, item) => {
         const linkToSapInstance = `/sap_systems/${item.id}`;
+        console.log(item);
         return (
           <Link to={linkToSapInstance}>
             <HealthIcon health={content} centered={true} />

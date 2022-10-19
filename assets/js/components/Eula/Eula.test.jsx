@@ -12,11 +12,6 @@ import Eula from '.';
 describe('Eula component', () => {
   it('should render community eula correctly', () => {
     const [statefulEula, store] = withState(<Eula />);
-    console.log(statefulEula);
-    console.log(
-      'HEEEEEEEEEEEEEEREEEEEEEEEEE IS THE STOOOOOOOOOOOOOOOORRRRRRRRRRRREEEEEEEEEEEEEE'
-    );
-    console.log(store);
     store.dispatch(setEulaVisible());
 
     render(statefulEula);
