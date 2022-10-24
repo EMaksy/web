@@ -89,6 +89,10 @@ module.exports = {
     '^@state(.*)$': '<rootDir>/js/state$1',
     '^@hooks(.*)$': '<rootDir>/js/components/Table/Filter.jsx',
     phoenix: '<rootDir>/../deps/phoenix/priv/static/phoenix.cjs.js',
+    'react-markdown':
+      '<rootDir>/node_modules/react-markdown/react-markdown.min.js',
+    'remark-gfm': '<rootDir>/mocks/remarkPlugin.js',
+    '\\.(jpg|ico|jpeg|png|gif)$': '<rootDir>/mocks/fileMock.js',
   },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
@@ -184,7 +188,7 @@ module.exports = {
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
   // transformIgnorePatterns: [
-  //   "/node_modules/",
+  //   "/node_modules/(?!(remark-gfm)/)",
   //   "\\.pnp\\.[^\\/]+$"
   // ],
 
